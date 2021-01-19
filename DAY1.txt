@@ -1,0 +1,2 @@
+Q1. Ans : O(N + M) time complexity, O(1) space complexity
+Q2. Ans : c)X will be a better choice for all inputs except possibly large inputs
