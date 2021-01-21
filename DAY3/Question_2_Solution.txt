@@ -1,0 +1,9 @@
+# Define a function swap that should swap two values and print the swapped variables outside the swap function.
+def swap(a, b):
+     a,b = b,a
+     return a ,b
+
+a = int(input("enter 1st number:"))
+b = int(input("enter 2nd number:"))
+a , b = swap(a,b)
+print(a,b)
