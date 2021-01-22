@@ -1,0 +1,13 @@
+# Implement binary search using python language.
+def binarysrch(l,x):
+
+    for i in range(0, len(l)):
+        if l[i] == x:
+            print("the index is",i)
+            break
+    else:
+     print("-1")
+
+l = [int(i) for i in input('Enter an array:').split()]
+x = int(input('Enter a array element to find its index:'))
+binarysrch(l,x)
