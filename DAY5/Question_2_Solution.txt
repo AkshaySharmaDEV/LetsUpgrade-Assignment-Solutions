@@ -1,0 +1,12 @@
+x = [int(i) for i in input("Enter Values:").split()]
+
+for i in range(len(x)):
+    min = i
+    for j in range(i+1,len(x)):
+        if x[min] > x[j]:
+            min = j
+    x[i] , x[min] = x[min] , x[i]
+
+print ("Sorted values is")
+for i in range(len(x)):
+    print("%d" %x[i])

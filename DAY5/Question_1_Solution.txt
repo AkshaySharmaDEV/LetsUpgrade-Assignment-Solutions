@@ -1,0 +1,6 @@
+Sorting Algorithm
+1.Selection Sort , Time Complexity:- Best : Ω(n^2) , Average : θ(n^2) , Worst : O(n^2)
+2.Bubble Sort , Time Complexity:- Best : Ω(n) , Average :θ(n^2) , Worst :O(n^2)
+3.Insertion Sort , Time Complexity:- Best :Ω(n) , Average :θ(n^2) , Worst :O(n^2)
+4.Quick Sort , Time Complexity:- Best Ω(n log(n)) , Average :θ(n log(n)) , Worst :O(n^2)
+5.Merge Sort , Time Complexity:- Ω(n log(n)), Average :θ(n log(n)) , Worst :O(n log(n))	

@@ -1,0 +1,43 @@
+def enqueue(x):
+    global f,r
+    if r == size - 1:
+        print("Overflow")
+        return
+    if r == -1:
+        f = r = 0
+    else:
+        r += 1
+    l.insert(r,x)
+
+
+def dequeue():
+    global l, f , r
+    if r == 0:
+        l.pop(0)
+        r -= 1
+        f -= 1
+        return
+    if f == -1:
+        print("No queue is left")
+        return
+    l.pop(0)
+    r -= 1
+
+def display():
+    global f,range
+    if f == -1:
+        print("Underflow")
+        return
+    for i in range(f, r+1):
+        print(l[i], end = "")
+l = list()
+f = -1
+r = -1
+size = 5
+
+enqueue(10)
+enqueue(20)
+enqueue(30)
+dequeue()
+
+display()
