@@ -1,0 +1,46 @@
+def push(self, top, x):
+    global size
+    if top == size - 1:
+        print("Stack overflow")
+        return
+    top = top + 1
+    self.insert(top, x)
+    return self, top
+
+def display(self, top):
+    global size
+    if top == -1:
+        print("Stack is empty")
+        return
+    for i in range(top, -1, -1):
+        print(self[i])
+
+def pop(self, top):
+    global size
+    if top == -1:
+        print("Stack underflow")
+        return
+    a = self[top]
+    self.remove(self[top])
+    print("Element popped from stack is:", a)
+    top = top - 1
+    return self, top
+
+l = list()
+min_list = list()
+size = 10
+list_top = -1
+min_top = -1
+
+l, list_top = push(l, list_top, 1)
+min_list, min_top = push(min_list, min_top, 1)
+l, list_top = push(l, list_top, 2)
+if (min_list[min_top] <= 2):
+    a = min_list[min_top]
+    min_list, min_top = push(min_list, min_top, a)
+l, list_top = push(l, list_top, 3)
+if (min_list[min_top] <= 3):
+    a = min_list[min_top]
+    min_list, min_top = push(min_list, min_top, a)
+display(l, list_top)
+print("Tmin value is:", min_list[min_top])

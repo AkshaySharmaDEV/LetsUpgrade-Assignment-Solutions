@@ -1,0 +1,10 @@
+list = input("Enter values:").split()
+b=1
+count=0
+
+for i in list:
+  count = count + (len(i) - len(i.rstrip('0')))
+  i = i.rstrip('0')
+  b = b*int(i)
+
+print(str(b) + '0'*count)
